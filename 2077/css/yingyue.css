@@ -46,16 +46,17 @@
 }
 .menu{
 	width: 70%;
-
 	height: 100%;
-	margin-right: 5vw;
+	display: flex;
 	float: right;
     list-style: none;
 	display: inline-flex;
 	cursor: pointer;
+	justify-content: space-around;
 }
 .menu li {
 
+	
     background:#2D2D2D;
 	margin-left: 30px;
 	padding-left: 10px;
@@ -71,7 +72,7 @@
 	font-weight: bolder;
 	color:#FFED00 ;
 
-	font-size: 1em;
+	font-size: 20px;
 	
 }
 .link3{
