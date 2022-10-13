@@ -183,7 +183,7 @@ window.onload=function ()
 		
 		if(first_index==1)
 			{
-				myau.src="music/类似音乐/syberpunk  (Dubstep Remix).mp3";
+				myau.src="music/边缘行者/Cyberpunk - Friday Night Fire Fight.mp3";
 			}
 		first_index++;
 		pp_index++;
@@ -431,7 +431,7 @@ window.onload=function ()
 		
 		if(first_index3==1)
 			{
-				myau.src="music/车载电台音乐/Miami Nights 1984 - Tiger42.mp3";
+				myau.src="music/边缘行者/Dawid Podsiadło - Let You Down.mp3";
 			}
 		first_index3++;
 		pp_index3++;
@@ -513,7 +513,7 @@ window.onload=function ()
 		
 		if(first_index4==1)
 			{
-				myau.src="music/车载电台音乐/NIEMAN - Let Me.mp3";
+				myau.src="music/车载电台音乐/Grimes - 4ÆM.mp3";
 			}
 		first_index4++;
 		pp_index4++;
@@ -594,7 +594,7 @@ window.onload=function ()
 		
 		if(first_index5==1)
 			{
-				myau.src="music/车载电台音乐/Televisor - Neon.mp3";
+				myau.src="music/边缘行者/Cyberpunk - Whos Ready for Tomorrow.mp3";
 			}
 		first_index5++;
 		pp_index5++;
@@ -674,7 +674,7 @@ window.onload=function ()
 		pp_index10=1;
 		if(first_index6==1)
 			{
-				myau.src="music/车载电台音乐/The Weeknd - Save Your Tears (Clean).mp3";
+				myau.src="music/车载电台音乐/Electric Youth - Innocence.mp3";
 			}
 		first_index6++;
 		pp_index6++;
@@ -756,7 +756,7 @@ window.onload=function ()
 		pp_index10=1;
 		if(first_index7==1)
 			{
-				myau.src="music/车载电台音乐/WRLD - By Design.mp3";
+				myau.src="music/游戏原声带/iwantyou.mp3";
 			}
 		first_index7++;
 		pp_index7++;
@@ -837,7 +837,7 @@ window.onload=function ()
 		pp_index10=1;
 		if(first_index8==1)
 			{
-				myau.src="music/类似音乐/Twisterium - Summer Fever.mp3";
+				myau.src="music/边缘行者/Cyberpunk - Little Stranger.mp3";
 			}
 		first_index8++;
 		pp_index8++;
@@ -918,7 +918,7 @@ window.onload=function ()
 		pp_index10=1;
 		if(first_index9==1)
 			{
-				myau.src="music/游戏原声带/iwantyou.mp3";
+				myau.src="music/车载电台音乐/WRLD - By Design.mp3";
 			}
 		first_index9++;
 		pp_index9++;
@@ -1228,7 +1228,7 @@ window.onload=function ()
 		
 		alert("公告: 下载功能尚不完善，下载音乐，请右键新页面另存为到本地");
 			  
-		window.open("music/类似音乐/syberpunk  (Dubstep Remix).mp3");
+		window.open("music/边缘行者/Cyberpunk - Friday Night Fire Fight.mp3");
 	}
 	
 	myload1.onclick=function()
@@ -1252,7 +1252,7 @@ window.onload=function ()
 		
 		alert("公告: 下载功能尚不完善，下载音乐，请右键新页面另存为到本地");
 			  
-		window.open("music/车载电台音乐/Miami Nights 1984 - Tiger42.mp3");
+		window.open("music/边缘行者/Dawid Podsiadło - Let You Down.mp3");
 	}
 	
 	myload4.onclick=function()
@@ -1260,7 +1260,7 @@ window.onload=function ()
 		
 		alert("公告: 下载功能尚不完善，下载音乐，请右键新页面另存为到本地");
 			  
-		window.open("music/车载电台音乐/NIEMAN - Let Me.mp3");
+		window.open("music/车载电台音乐/Grimes - 4ÆM.mp3");
 	}
 	
 	myload5.onclick=function()
@@ -1268,7 +1268,7 @@ window.onload=function ()
 		
 		alert("公告: 下载功能尚不完善，下载音乐，请右键新页面另存为到本地");
 			  
-		window.open("music/车载电台音乐/Televisor - Neon.mp3");
+		window.open("music/边缘行者/Cyberpunk - Whos Ready for Tomorrow.mp3");
 	}
 	
 	myload6.onclick=function()
@@ -1276,7 +1276,7 @@ window.onload=function ()
 		
 		alert("公告: 下载功能尚不完善，下载音乐，请右键新页面另存为到本地");
 			  
-		window.open("music/车载电台音乐/The Weeknd - Save Your Tears (Clean).mp3");
+		window.open("music/车载电台音乐/Electric Youth - Innocence.mp3");
 	}
 	
 	myload7.onclick=function()
@@ -1284,7 +1284,7 @@ window.onload=function ()
 		
 		alert("公告: 下载功能尚不完善，下载音乐，请右键新页面另存为到本地");
 			  
-		window.open("music/车载电台音乐/WRLD - By Design.mp3");
+		window.open("music/游戏原声带/iwantyou.mp3");
 	}
 	
 	myload8.onclick=function()
@@ -1292,7 +1292,7 @@ window.onload=function ()
 		
 		alert("公告: 下载功能尚不完善，下载音乐，请右键新页面另存为到本地");
 			  
-		window.open("music/类似音乐/Twisterium - Summer Fever.mp3");
+		window.open("music/边缘行者/Cyberpunk - Little Stranger.mp3");
 	}
 	
 	myload9.onclick=function()
@@ -1300,7 +1300,7 @@ window.onload=function ()
 		
 		alert("公告: 下载功能尚不完善，下载音乐，请右键新页面另存为到本地");
 			  
-		window.open("music/类似音乐/iwantyou.mp3");
+		window.open("music/车载电台音乐/WRLD - By Design.mp3");
 	}
 	
 	myload10.onclick=function()
