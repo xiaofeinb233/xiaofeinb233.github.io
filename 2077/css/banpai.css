@@ -1,0 +1,455 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Century Schoolbook L";
+}
+
+.MUSIC{
+	display: inline-flex;
+
+	position: relative;
+	height: 100%;
+	width: 6vw;
+	float: left;
+}
+.MUSIC .hidden{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: none;
+
+}
+.MUSIC .show{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: block;
+	cursor: pointer;
+}
+
+
+.menubar{
+	z-index: 999;
+	width: 100vw;
+	position: fixed;
+	height: 6vh;
+	background:#FFED00;
+
+	
+	
+	filter: drop-shadow(0px 10px 10px #000);
+	transition: 0.6s ease;
+}
+.menu{
+	height: 100%;
+	margin-right: 5vw;
+	float: right;
+    list-style: none;
+	display: inline-flex;
+	cursor: pointer;
+}
+.menu li {
+
+    background:#2D2D2D;
+	margin-left: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 2px solid #000;
+	transform: skewX(-30deg);
+	filter: drop-shadow(2px 0px 5px #000);
+	
+	letter-spacing: 5px;
+	font-weight: bolder;
+	color:#FFED00 ;
+
+	font-size: 20px;
+	
+}
+.link3{
+	text-decoration: none;
+}
+.logo{
+	height: 100%;
+	float: left;
+}
+.logo img{
+
+	float: left;
+	height: 100%;
+	background: #2D2D2D;
+	transform: skewX(-30deg);
+	filter: drop-shadow(2px 0px 5px #000);
+}
+.menubar:hover{
+	height: 7vh;
+}
+.menubar ul li:hover{
+     color:#fff ;
+    transition: 0.6s ease;
+	font-weight: bolder;
+	background:#5A5A5A;
+
+}
+#three{
+	color:#fff ;
+	font-weight: bolder;
+	background:#5A5A5A;
+}
+.submenu1{
+	
+display: none;
+
+	
+}
+.menubar ul li:hover .submenu1{
+	display: block;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -41px;
+	
+}
+.menubar ul li:hover #people {
+	display: block;
+	position: absolute;
+	width: 204px;
+
+	margin-top: 10px;
+	margin-left: -41px;
+	text-align: center;
+
+}
+.submenu1 ul li a:hover{
+	color: white;
+}
+
+.submenu1 ul li a{
+	white-space: nowrap;
+	text-decoration: none;
+	color: #FFED00;
+	white-space: pre;
+
+}
+.submenu1 ul{
+	list-style: none;
+
+}
+.submenu1 ul li{
+
+	transform: skewX(0deg);
+	filter: drop-shadow(0px 0px 0px );
+}
+.back{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: #FCEB00;
+	overflow: hidden;
+}
+
+/*music*/
+.tips{
+	display: flex;
+	height: 5%;
+	width: 20%;
+	position: absolute;
+	top: 94%;
+	left: -6.2%;
+	transform: translate(-50%,-50%);
+    margin-left: 0px;
+	align-items: center;
+	justify-content: space-around;
+	transition: 0.6s;
+
+}
+.pips{
+	display: flex;
+	height: 5%;
+	width: 20%;
+	position: absolute;
+	top: 94%;
+	left: -6.2%;
+	transform: translate(-50%,-50%);
+    margin-left: -200px;
+	align-items: center;
+	justify-content: space-around;
+
+	transition: 0.6s;
+}
+.music_tip{
+	display: flex;
+	border-radius: 20px;
+	height: 60%;
+	width: 250px;
+	
+	border: 5px solid #000;
+	background: rgba(17,17,17,0.5);
+
+}
+.music_tip span{
+	color:#FFE500;
+	font-weight: bold;
+	font-size: 20px;
+	animation-name: move;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.music_tip .music_name{
+	height: 100%;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+    display: flex;
+	align-items: center;
+}
+#QQmusic{
+	position: absolute;
+	width: 50px;
+	
+	animation-name: rotate;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+}
+#quan{
+	position: absolute;
+    width: 50px;
+	
+	animation-name: big_vanish;
+	animation-duration: 1.65s;
+	animation-iteration-count: infinite;
+	filter: brightness(0.5);
+}
+.tips:hover {
+	margin-left: 260px;
+}
+@keyframes move
+{
+	from{margin-left: 0;}
+	to{margin-left: -200px;}
+}
+@keyframes rotate
+{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+@keyframes big_vanish
+{
+	from{transform: scale(1,1);
+	opacity: 1;}
+	to{transform: scale(1.5,1.5);
+	opacity: 0;}
+}
+
+
+.gif_back{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+}
+.pic_part{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	height: 76%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	transition: 0.6s;
+	border-radius: 20px;
+	box-shadow: 10px 10px 30px 0 #000;
+	animation-name:banner_move;
+	animation-duration: 1s;
+}
+@keyframes banner_move
+{
+	from{opacity: 0;
+		left: 20%;}
+	to{opacity: 1;
+		left: 50%;}
+}
+.pic{
+	margin-top: 300px;
+	transform: scale(1,1);
+	filter: brightness(1);
+	transition: 0.6s;
+}
+.picC{
+	margin-top: 400px;
+	transform: scale(1.1,1.1);
+	filter: brightness(0.5);
+	transition: 0.6s;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	height: 76%;
+	border: 5px solid red;
+
+	overflow: hidden;
+		border-radius: 20px;
+	opacity: 0;
+	transition: 0.6s;
+
+}
+.titleC{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	height: 76%;
+	border: 5px solid red;
+
+	overflow: hidden;
+		border-radius: 20px;
+	opacity: 1;
+transition: 0.6s;
+}
+.mainname
+{
+	position: absolute;
+	top: 60%;
+	left: 0%;
+
+
+    width: 25%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: red;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+.introduce
+{
+	position: absolute;
+	bottom: 0%;
+	left: 2%;
+
+    font-size: 20px;
+    width: 96%;
+	height: 20%;
+	color: red;
+	text-indent: 2em;
+
+}
+.leftbtn_part{
+	position: absolute;
+	top: 50%;
+	left: 4%;
+	transform: translate(-50%,-50%);
+	width: 100px;
+	height: 100px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.leftbtn{
+	filter: brightness(1);
+	transform: scale(1,1);
+	transition: 0.6s;
+	
+}
+.leftbtn:hover{
+	
+	transform: scale(1.1,1.1);
+	filter: brightness(2);
+	cursor: pointer;
+}
+
+
+.rightbtn_part{
+	position: absolute;
+	top: 50%;
+	left: 96%;
+	transform: translate(-50%,-50%);
+	width: 100px;
+	height: 100px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.rightbtn{
+	filter: brightness(1);
+	transform: scale(1,1);
+	transition: 0.6s;
+	
+}
+.rightbtn:hover{
+	
+	transform: scale(1.1,1.1);
+	filter: brightness(2);
+	cursor: pointer;
+}
+.pic.appear1
+{
+	animation-name: appear1;
+	animation-duration: 1.5s;
+}
+.pic.appear2
+{
+	animation-name: appear2;
+	animation-duration: 1.5s;
+}
+@keyframes appear1
+{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes appear2
+{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+.banpai_logo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 25%;
+	height: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.svglogo{
+	width: 200px;
+}
+.anim{
+
+	width: 50px;
+	height: 50px;
+}
+
+
+

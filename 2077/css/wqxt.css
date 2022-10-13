@@ -1,0 +1,689 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Century Schoolbook L";
+}
+
+.MUSIC{
+	display: inline-flex;
+
+	position: relative;
+	height: 100%;
+	width: 6vw;
+	float: left;
+}
+.MUSIC .hidden{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: none;
+
+}
+.MUSIC .show{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: block;
+	cursor: pointer;
+}
+
+
+.menubar{
+	z-index: 999;
+	width: 100vw;
+	position: fixed;
+	height: 6vh;
+	background:#FFED00;
+
+	
+	
+	filter: drop-shadow(0px 10px 10px #000);
+	transition: 0.6s ease;
+}
+.menu{
+	height: 100%;
+	margin-right: 5vw;
+	float: right;
+    list-style: none;
+	display: inline-flex;
+	cursor: pointer;
+}
+.menu li {
+
+    background:#2D2D2D;
+	margin-left: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 2px solid #000;
+	transform: skewX(-30deg);
+	filter: drop-shadow(2px 0px 5px #000);
+	
+	letter-spacing: 5px;
+	font-weight: bolder;
+	color:#FFED00 ;
+
+	font-size: 20px;
+	
+}
+.link3{
+	text-decoration: none;
+}
+.logo{
+	height: 100%;
+	float: left;
+}
+.logo img{
+
+	float: left;
+	height: 100%;
+	background: #2D2D2D;
+	transform: skewX(-30deg);
+	filter: drop-shadow(2px 0px 5px #000);
+}
+.menubar:hover{
+	height: 7vh;
+}
+.menubar ul li:hover{
+     color:#fff ;
+    transition: 0.6s ease;
+	font-weight: bolder;
+	background:#5A5A5A;
+
+}
+#three{
+	color:#fff ;
+	font-weight: bolder;
+	background:#5A5A5A;
+}
+.submenu1{
+	
+display: none;
+
+	
+}
+.menubar ul li:hover .submenu1{
+	display: block;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -41px;
+	
+}
+.menubar ul li:hover #people {
+	display: block;
+	position: absolute;
+	width: 204px;
+
+	margin-top: 10px;
+	margin-left: -41px;
+	text-align: center;
+
+}
+.submenu1 ul li a:hover{
+	color: white;
+}
+
+.submenu1 ul li a{
+	white-space: nowrap;
+	text-decoration: none;
+	color: #FFED00;
+	white-space: pre;
+
+}
+.submenu1 ul{
+	list-style: none;
+
+}
+.submenu1 ul li{
+
+	transform: skewX(0deg);
+	filter: drop-shadow(0px 0px 0px );
+}
+.back{
+	width: 100%;
+	height: 100vh;
+	background: #FCEB00;
+}
+.banner{
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: 10px solid #fff;
+	border-radius: 10%;
+	width: 75%;
+	height: 80%;
+	box-shadow: 5px 5px 30px 0 #000;
+	overflow: hidden;
+	transition: 0.6s;
+	background: #000;
+}
+.banner:hover{
+	width: 77%;
+	height: 82%;
+		
+}
+#left{
+	position: absolute;
+	top: 53%;
+	left: 5%;
+	transform: translate(-50%,-50%);
+	transition: 0.6s;
+	width: 90px;
+	filter: brightness(1);
+	
+}
+#left:hover{
+	cursor: pointer;
+	width: 100px;
+}
+#left:active{
+	filter: brightness(0.5);
+}
+#right{
+	position: absolute;
+	top: 53%;
+	left: 95%;
+	transform: translate(-50%,-50%);
+	transition: 0.6s;
+	width: 90px;
+	filter: brightness(1);
+	
+}
+#right:hover{
+	cursor: pointer;
+	width: 100px;
+}
+#right:active{
+	filter: brightness(0.5);
+}
+#img1{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+@keyframes appear1
+{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes appear2
+{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+.show1{
+ 
+	animation-name: appear1;
+	animation-duration: 0.5s;
+}
+.show2{
+
+	animation-name: appear2;
+	animation-duration: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*music*/
+.tips{
+	display: flex;
+	height: 5%;
+	width: 20%;
+	position: absolute;
+	top: 94%;
+	left: -6.2%;
+	transform: translate(-50%,-50%);
+    margin-left: 0px;
+	align-items: center;
+	justify-content: space-around;
+	transition: 0.6s;
+
+}
+.pips{
+	display: flex;
+	height: 5%;
+	width: 20%;
+	position: absolute;
+	top: 94%;
+	left: -6.2%;
+	transform: translate(-50%,-50%);
+    margin-left: -200px;
+	align-items: center;
+	justify-content: space-around;
+
+	transition: 0.6s;
+}
+.music_tip{
+	display: flex;
+	border-radius: 20px;
+	height: 60%;
+	width: 250px;
+	
+	border: 5px solid #000;
+	background: rgba(17,17,17,0.5);
+
+}
+.music_tip span{
+	color:#FFE500;
+	font-weight: bold;
+	font-size: 20px;
+	animation-name: move;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.music_tip .music_name{
+	height: 100%;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+    display: flex;
+	align-items: center;
+}
+#QQmusic{
+	position: absolute;
+	width: 50px;
+	
+	animation-name: rotate;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+}
+#quan{
+	position: absolute;
+    width: 50px;
+	
+	animation-name: big_vanish;
+	animation-duration: 1.65s;
+	animation-iteration-count: infinite;
+	filter: brightness(0.5);
+}
+.tips:hover {
+	margin-left: 300px;
+}
+@keyframes move
+{
+	from{margin-left: 0;}
+	to{margin-left: -210px;}
+}
+@keyframes rotate
+{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+@keyframes big_vanish
+{
+	from{transform: scale(1,1);
+	opacity: 1;}
+	to{transform: scale(1.5,1.5);
+	opacity: 0;}
+}
+
+.body{
+    top:0;
+	left:0;
+	position: absolute;
+	width:100%;
+	height:90%;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../image/PNG/back1.png);
+}
+ .weapon_show{
+	position: absolute;
+	top: 33%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width: 60%;
+	height: 80%;
+    
+transition: 0.6s;
+	display: flex;
+	 align-items: center;
+	 justify-content: center;
+
+	
+}
+.weapon_showC{
+	position: absolute;
+	top: 33%;
+	left:37%;
+	transform: translate(-50%,-50%);
+	width: 60%;
+	height: 80%;
+    
+transition: 0.6s;
+	display: flex;
+	 align-items: center;
+	 justify-content: center;
+
+	
+}
+.gun{
+	height: 650px;
+	transition: 0.6s;
+
+	cursor: pointer;
+	animation-name: move1;
+	animation-duration: 1s;
+	
+
+}
+@keyframes move1
+{
+	from{margin-right: 600px;
+	opacity: 0;}
+	to{margin-right: 0px;
+	opacity: 1;}
+}
+
+#left{
+	position: absolute;
+	top: 53%;
+	left: 7%;
+	transform: translate(-50%,-50%);
+	transition: 0.6s;
+	width: 90px;
+	filter: brightness(2);
+	
+}
+#left:hover{
+	cursor: pointer;
+	width: 100px;
+}
+#left:active{
+	filter: brightness(1);
+}
+#right{
+	position: absolute;
+	top: 53%;
+	left: 93%;
+	transform: translate(-50%,-50%);
+	transition: 0.6s;
+	width: 90px;
+	filter: brightness(2);
+	
+}
+#right:hover{
+	cursor: pointer;
+	width: 100px;
+}
+#right:active{
+	filter: brightness(1);
+}
+
+.gun.show1{
+	animation-duration: 0.45s;
+	animation-name: appear1;
+}
+@keyframes appear1
+{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+.gun.show2{
+	animation-duration: :0.45s;
+	animation-name: appear2;
+}
+@keyframes appear2
+{
+	from{opacity: 0;}
+	to{opacity: 1;}
+	
+}
+.gun_tips
+{
+	position: absolute;
+
+	top:90%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	height: 100px;
+	width: 380px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #f4ea2a;
+	opacity: 0;
+	transition: 0.6s;
+	
+}
+.gun_tipsC
+{
+	position: absolute;
+
+	top:90%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	height: 100px;
+	width: 380px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #f4ea2a;
+	opacity: 1;
+	transition: 0.6s;
+}
+.gun_logo
+{
+	position: absolute;
+
+	top:77%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	height: 100px;
+	width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: 0.6s;
+	
+}
+.gun_logoC
+{
+	position: absolute;
+
+	top:77%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	height: 100px;
+	width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	transition: 0.6s;
+
+	
+}
+.glg{
+	height: 90%;
+	
+}
+.gun_introduction{
+	position:absolute;
+    top:50%;
+	left:75%;
+	transform: translate(-50%,-50%);
+	height: 65%;
+	width: 22%;
+	border: 4px solid rgba(25,144,255,0.8);
+	background: rgba(17,17,17,0.5);
+	border-radius: 15px;
+	opacity: 0;
+	transition: 1s;
+	
+	
+}
+.gun_introductionC{
+	position:absolute;
+    top:50%;
+	left:75%;
+	transform: translate(-50%,-50%);
+	height: 65%;
+	width: 22%;
+	border: 4px solid rgba(25,144,255,0.8);
+	background: rgba(17,17,17,0.5);
+	border-radius: 15px;
+	opacity: 1;
+	transition: 1s;
+	
+}
+.up_intr
+{
+	width: 100%;
+	height: 40%;
+
+}
+.mid_intr
+{
+	position: relative;
+	width: 100%;
+	height: 40%;
+
+}
+.down_intr
+{
+	width: 100%;
+	height: 20%;
+
+}
+.sub_up1
+{
+	position: relative;
+	width: 100%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	
+	
+}
+.sub_mid1
+{
+	position: relative;
+	width: 100%;
+	height: 25%;
+	display: flex;
+	align-items: center;
+	
+}
+.sub_down1
+{
+	position: relative;
+	width: 100%;
+	height: 25%;
+	display: flex;
+	align-items: center;
+	
+}
+.dps{
+	margin-left: 20px;
+	
+	color: aqua;
+	font-size: 40px;
+    }
+.damage{
+	
+	margin-left: 20px;
+	
+	color: whitesmoke;
+	font-size: 25px;
+}
+.time{
+	margin-left: 20px;
+	
+	color: whitesmoke;
+	font-size: 25px;
+}
+.sub_mid_intr{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 60%;
+
+	display: flex;
+}
+.left{
+	height: 100%;
+	width: 30%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.right{
+	height: 100%;
+	width: 70%;
+
+}
+.bullet{
+	height: 60%;
+}
+.up_content{
+	width: 100%;
+	height: 60%;
+
+	display: flex;
+	align-content: center;
+	color: aqua;
+	font-size: 40px;
+	font-weight: bold;
+}
+.down_content{
+	width: 100%;
+	height: 40%;
+
+	display: flex;
+	align-content: center;
+	color: aqua;
+	font-size: 20px;
+	font-weight:700;
+	
+}
+.down_intr{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 23px;
+	font-weight:700;
+	color:#B30032;
+}
+.anim{
+
+	width: 50px;
+	height: 50px;
+}
