@@ -243,6 +243,7 @@ display: none;
 	overflow-x: hidden;
 }
 .all_music::-webkit-scrollbar {
+	
             width: 20px; 
 	height: 100px;
 	margin-right: 100px;
@@ -266,8 +267,10 @@ display: none;
 	display: flex;
 	font-size: 25px;
 	align-items: center;
-
+	
+	
 }
+
 .two{
 	display: flex;
 	height: 100%;
@@ -279,10 +282,11 @@ display: none;
 	white-space: nowrap;
 	cursor:default;
 	align-items: center;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	
 	margin-right: 5%;
+	overflow-x: auto;
 }
+.two::-webkit-scrollbar {display:none}
 .three{
 	display: flex;
 	height: 100%;
@@ -295,13 +299,15 @@ display: none;
 	
 	cursor:default;
 	align-items: center;
-
+	overflow-x: auto;
 }
+.three::-webkit-scrollbar {display:none}
 .C{
 	
-	position: absolute;
 	
-	height: 123%;
+	
+	
+	height: 150%;
 
 
 	animation-name: bigsmall;
@@ -321,7 +327,7 @@ display: none;
 }
 @keyframes bigsmall
 {
-	from{transform: scale(1,1)}
+	from{transform: scale(1.03,1.03)}
 	to{transform: scale(1.1,1.1)}
 }
 .Heart{
@@ -360,11 +366,10 @@ display: none;
 	
 	
 	cursor:default;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	overflow-x: auto;
 	
 }
-
+.myspan::-webkit-scrollbar {display:none}
 .myspanC{
 	display: flex;
 	align-items: center;
@@ -377,10 +382,10 @@ display: none;
 	
 	
 	cursor:default;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	overflow-x: auto;
 
 }
+.myspanC::-webkit-scrollbar {display:none}
 .HQ{
 
 	margin-left: 10%;
@@ -419,7 +424,10 @@ display: none;
 	
 }
 .music_pic{
+	display: flex;
 	
+	align-items: center;
+	justify-content: center;
 	position: absolute;
 	width: 81%;
 	height: 81%;
