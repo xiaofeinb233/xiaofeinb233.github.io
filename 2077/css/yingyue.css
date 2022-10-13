@@ -243,11 +243,11 @@ display: none;
         }
 .all_music::-webkit-scrollbar-thumb {
             border-radius: 10px;
-            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-            background: rgba(0,0,0,0.2);
+            -webkit-box-shadow: inset 0 0 5px rgba(247, 241, 241, 0.946);
+            background: rgba(240, 240, 231, 0.932);
         }
 .all_music::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            -webkit-box-shadow: inset 0 0 5px rgba(248, 227, 227, 0.941);
             border-radius: 10px;
             background: rgba(0,0,0,0.1);
 
