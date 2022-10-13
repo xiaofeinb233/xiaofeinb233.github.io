@@ -370,7 +370,7 @@ display: none;
 .myspanC{
 	display: flex;
 	align-items: center;
-	display: block;
+	
 	margin-left: 10px;
 	height: 100%;
 	width: 60%;
