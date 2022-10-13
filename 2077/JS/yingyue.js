@@ -69,20 +69,41 @@ window.onload=function ()
 	var heart_index10=1;
 	//heart
 	//musicbar and music_pic
-	mymusicbar.onmouseover=function ()
-	{
-		mypic.className="music_pic low";
+
+	///mymusicbar.onmouseover=function ()
+	//{
+	//	mypic.className="music_pic low";
 		
-		myanimi1.className="anipi";
-		myanimi2.className="anipi";
-	}
+	//	myanimi1.className="anipi";
+	//	myanimi2.className="anipi";
+	//}
 	
-	mymusicbar.onmouseout=function ()
-	{
-		mypic.className="music_pic up";
+	//mymusicbar.onmouseout=function ()
+	//{
+	//	mypic.className="music_pic up";
 		
-		myanimi1.className="animi";
-		myanimi2.className="animi";
+	//	myanimi1.className="animi";
+	//	myanimi2.className="animi";
+	//}
+
+	var num=0;
+	myanimi2.onclick=function()
+	{
+		num++;
+		if(num%2!=0)
+		{
+			mymusicbar.className="musicbar_change"
+			mypic.className="music_pic low";
+			myanimi1.className="anipi";
+			myanimi2.className="anipi";
+		}
+		else
+		{
+			mymusicbar.className="musicbar"
+			mypic.className="music_pic up";
+			myanimi1.className="animi";
+			myanimi2.className="animi";
+		}
 	}
 	//musicbar and music_pic
 	//animi move
