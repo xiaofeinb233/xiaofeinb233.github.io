@@ -178,7 +178,6 @@ display: none;
 	
 }
 .musicbar_change{
-	
 	margin-top: 40px;
 	position: relative;
 	width: 80%;
@@ -321,7 +320,10 @@ display: none;
 	
 	
 	
-	height: 150%;
+	
+	
+	
+	height: 180%;
 
 
 	animation-name: bigsmall;
