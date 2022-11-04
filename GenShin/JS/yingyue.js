@@ -214,7 +214,7 @@ window.onload=function ()
 	
 		if(pp_index==0)
 		{
-			myC.src="image/JPG/音乐背景/1.png";
+			myC.src="image/JPG/音乐背景/1.jpg";
 			myC.className="C play";
 			myqqlogo.className="qqlogo play";
 			mycicle.className="circle play";
@@ -787,7 +787,7 @@ window.onload=function ()
 	
 		if(pp_index7==0)
 		{
-			myC.src="image/JPG/音乐背景/8.png";
+			myC.src="image/JPG/音乐背景/8.jpg";
 			myC.className="C play";
 			myqqlogo.className="qqlogo play";
 			mycicle.className="circle play";
