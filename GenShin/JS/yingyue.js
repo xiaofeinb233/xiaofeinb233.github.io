@@ -1,6 +1,12 @@
 // JavaScript Document
 window.onload=function ()
 {
+	//加载完成
+	var myloading=document.getElementById("loading_view");
+	myloading.className="loading_view_off"
+
+
+
 	//span
 	var span1=document.getElementById("span1");
 	var span2=document.getElementById("span2");
