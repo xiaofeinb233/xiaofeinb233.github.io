@@ -1,0 +1,106 @@
+@import "utils";
+#signin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  .signin-mask, .signin-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .signin-mask {
+    background-image: url('/static/images/signinbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(4px);
+    z-index: 9;
+  }
+  .signin-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    padding: 1.2rem 0.8rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    .close {
+      align-self: flex-start;
+      .iconfont {
+        font-size: 0.68rem;
+      }
+    }
+    .user {
+      .iconfont{
+        font-size: 2.22rem;
+      }
+    }
+    .username-input, .password-input {
+      border-bottom: 1px solid #fff;
+      width: 100%;
+      input {
+        width: 100%;
+        border: 0;
+        outline: none;
+        background-color: transparent;
+        color: #fff;
+        text-align: center;
+        line-height: 1.2rem;
+        font-size: 0.38rem;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .submit-block {
+      position: relative;
+      margin-top: 0.6rem;
+      text-align: center;
+      width: 100%;
+      .signin {
+        font-size: 0.6rem;
+      }
+      .signup {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: 0.32rem;
+        color: @shallow;
+      }
+    }
+  }
+  .wx-signin {
+    margin-top: 1.0rem;
+    width: 100%;
+    .title {
+      position: relative;
+      text-align: center;
+      font-size: 0.32rem;
+      &:after, &:before {
+        content: '';
+        width: 1.42rem;
+        position: absolute;
+        border-bottom: 1px solid #fff;
+        top: 50%;
+      }
+      &:after {
+        left: 0;
+      }
+      &:before {
+        right: 0;
+      }
+    }
+    .wx-btn {
+      text-align: center;
+      margin-top: 0.4rem;
+      .iconfont {
+        font-size: 1.2rem;
+        color: #1ccf5b;
+      }
+    }
+  }
+}

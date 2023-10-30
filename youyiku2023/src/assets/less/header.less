@@ -1,0 +1,30 @@
+@import "utils.less";
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 0.74rem;
+  border-bottom: 1px solid @deepBorder;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background-color: #fff;
+  & + * {
+    margin-top: 0.76rem;
+    overflow: hidden;
+  }
+  .left, .right {
+    flex: 1;
+    text-align: center;
+    .iconfont {
+      font-size: 0.46rem;
+    }
+  }
+  .title {
+    flex: 4;
+    font-size: 0.32rem;
+    text-align: center;
+  }
+}

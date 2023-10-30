@@ -1,0 +1,74 @@
+@import "utils.less";
+/* swipe*/
+.home-swipe {
+  height: 2.96rem;
+}
+
+/* 导航 */
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  border-top: 1px solid @shallowBorder;
+  border-bottom: 1px solid @shallowBorder;
+  background-color: @bgColor;
+  height: 1.2rem;
+  & + * {
+    margin-top: 1.2rem;
+  }
+  .left, .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.2rem;
+    color: @deep;
+  }
+  .left {
+    flex: 1;
+    border-right: 1px solid @shallowBorder;
+    .iconfont {
+      font-size: 0.68rem;
+    }
+  }
+  .right {
+    flex: 1;
+    .iconfont {
+      font-size: 0.68rem;
+    }
+  }
+}
+/* 商品 */
+.goods {
+  .goods-list {
+    display: flex;
+    flex-wrap: wrap;
+    .goods-item {
+      display: block;
+      width: 50%;
+      box-sizing: border-box;
+      border-bottom: 1px solid @shallowBorder;
+      height: 3.4rem;
+      &:nth-child(odd) {
+        border-right: 1px solid @shallowBorder;
+      }
+      .goods-image {
+        box-sizing: border-box;
+        padding: 0.1rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: 0.1rem auto 0.06rem;
+      }
+      .goods-text {
+        .text-overflow();
+        margin: 0 0.6rem;
+        text-align: center;
+        line-height: 0.30rem;
+        font-size: 0.24rem;
+
+      }
+    }
+  }
+}

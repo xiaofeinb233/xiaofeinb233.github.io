@@ -1,0 +1,223 @@
+@import 'utils.less';
+.goods-page {
+  margin-bottom: 0.88rem;
+}
+.goods-detail {
+  position: relative;
+  .image-block {
+    box-sizing: border-box;
+    padding: 0.1rem;
+    height: 7.5rem;
+  }
+  .goods-info {
+    border-bottom: 1px solid @deepBorder;
+    padding-bottom: 0.2rem;
+    margin: 0 0.3rem;
+    .goods-name {
+      font-size: 0.32rem;
+      line-height: 0.48rem;
+    }
+    .goods-price {
+      display: flex;
+      align-items: flex-end;
+      height: 0.40rem;
+      color: @highlight;
+      s {
+        margin-left: 0.3rem;
+        color: @shallow;
+      }
+    }
+  }
+  .goods-collect {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.26rem;
+    .iconfont {
+      font-size: 0.44rem;
+    }
+    .icon-collected {
+      color: @highlight;
+    }
+  }
+  .goods-fitting {
+    position: absolute;
+    bottom: 0.3rem;
+    right: 0.3rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.26rem;
+    .iconfont {
+      font-size: 0.44rem;
+    }
+  }
+}
+.detail-block {
+  margin: 0 0.3rem;
+  overflow: hidden;
+  .detail-header {
+    display: flex;
+    position: relative;
+    height: 1.48rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    span {
+      padding: 0 0.2rem;
+      background-color: #fff;
+    }
+    &:after {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      width: 2.6rem;
+      border-bottom: 1px solid @shallow;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .detail-image {
+    height: 7.5rem;
+    margin: 0.2rem 0;
+  }
+  .detail-text {
+    p {
+      font-size: 0.32rem;
+      line-height: 1.2;
+    }
+  }
+}
+.recommend-block {
+  margin: 0 0.2rem;
+  .recommend-header {
+    display: flex;
+    position: relative;
+    height: 1.48rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    span {
+      padding: 0 0.2rem;
+      background-color: #fff;
+    }
+    &:after {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      width: 2.2rem;
+      border-bottom: 1px solid @shallow;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .recommend-list {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      display: block;
+      width: 3.44rem;
+      height: 4.24rem;
+      box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.1);
+      margin-bottom: 0.22rem;
+      &:nth-child(odd) {
+        margin-right: 0.22rem;
+      }
+      .image-block {
+        box-sizing: border-box;
+        padding: 0.1rem;
+        height: 3.28rem;
+        margin: 0.12rem 0;
+      }
+      .title, .price {
+        text-align: center;
+        font-size: 0.24rem;
+      }
+      .title {
+        .text-overflow();
+        margin-left: 0.6rem;
+        margin-right: 0.6rem;
+        margin-bottom: 0.1rem;
+      }
+      .price {
+        color: @shallow;
+      }
+    }
+  }
+}
+#top {
+  position: fixed;
+  bottom: 1.0rem;
+  right: 0.3rem;
+  z-index: 101;
+  width: 0.76rem;
+  height: 0.76rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  .iconfont {
+    font-size: 0.42rem;
+    color: @shallow;
+  }
+}
+.payment-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 0.88rem;
+  border-top: 1px solid @deepBorder;
+  background-color: #fff;
+  text-align: center;
+  color: @highlight;
+  font-size: 0.34rem;
+  z-index: 100;
+}
+.tkl {
+  position: fixed;
+  z-index: 102;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  .tkl-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.0rem;
+    background-color: #fff;
+    .tkl-text {
+      width: 5.36rem;
+      text-align: center;
+      border: 1px solid @deepBorder;
+      line-height: 0.76rem;
+      height: 0.76rem;
+      font-size: 0.34rem;
+    }
+    .tkl-tips {
+      text-align: center;
+      color: @shallow;
+      margin-top: 0.32rem;
+    }
+    .back {
+      position: absolute;
+      top: 0.34rem;
+      right: 0.4rem;
+      color: @highlight;
+      font-size: 0.32rem;
+    }
+  }
+}
